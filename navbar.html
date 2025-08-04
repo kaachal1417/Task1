@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Nexus Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  padding-top:80px ;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #333;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+.btn {
+  font-size: 0.95rem;
+  padding: 6px 14px;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  background: linear-gradient(135deg, #0575E6, #021B79);
+  color: white;
+}
+
+.hero-section .btn {
+  font-size: 1rem;
+}
+
+.hero-section .small-text {
+  font-size: 0.9rem;
+}
+
+.icon-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  transition: background 0.3s;
+}
+
+.icon-box:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+/* Feature Cards */
+.feature-cards .card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  background-color: #9ec1fa;
+}
+
+.feature-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-cards .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+/* Services Grid Section */
+.services-grid .icon {
+  font-size: 2rem;
+}
+
+.service-card {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 px-4 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-primary" href="#">Health Nexus</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-2">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Find Doctors</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <div class="d-flex align-items-center">
+        <a href="#" class="btn btn-danger me-2">Emergency</a>
+        <a href="#" class="btn btn-outline-primary me-2">Login</a>
+        <a href="#" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+<!-- Hero Section Start -->
+<section class="hero-section text-white text-center py-5">
+  <div class="container">
+    <p class="btn btn-light text-primary fw-semibold mb-3 small-text">भारत का भरोसेमंद स्वास्थ्य साथी</p>
+
+    <h1 class="display-5 fw-bold mb-3">Your Health is Our Priority</h1>
+    <p class="mb-4">Connect with certified doctors, book appointments, and manage your health records securely – all in one place.</p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+      <a href="#" class="btn btn-outline-light px-4">📅 Book Appointment</a>
+      <a href="#" class="btn btn-danger px-4">🚨 Emergency Care</a>
+    </div>
+
+    <!-- Statistics -->
+    <div class="row text-white mb-4">
+      <div class="col-6 col-md-3 mb-3">
+        <h4>50000+</h4>
+        <p class="mb-0 small-text">Happy Patients</p>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <h4>1000+</h4>
+        <p class="mb-0 small-text">Expert Doctors</p>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <h4>24/7</h4>
+        <p class="mb-0 small-text">Support Available</p>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <h4>100+</h4>
+        <p class="mb-0 small-text">Cities Covered</p>
+      </div>
+    </div>
+
+    <!-- Icons Row -->
+    <div class="row text-white pt-3">
+      <div class="col-6 col-md-3 mb-3">
+        <div class="icon-box">
+          <div class="icon mb-2">⭐</div>
+          <p class="mb-0">Best Doctors</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <div class="icon-box">
+          <div class="icon mb-2">📄</div>
+          <p class="mb-0">Digital Health Records</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <div class="icon-box">
+          <div class="icon mb-2">⏰</div>
+          <p class="mb-0">24/7 Support</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <div class="icon-box">
+          <div class="icon mb-2">🛒</div>
+          <p class="mb-0">Easy Booking</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hero Section End -->
+<!-- Feature Cards Section Start -->
+<section class="feature-cards py-5 bg-light">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <div class="icon mb-3 text-primary fs-1">⭐</div>
+          <h5 class="fw-bold">Best Doctors</h5>
+          <p class="text-muted small">Top-rated and verified medical professionals</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <div class="icon mb-3 text-primary fs-1">📄</div>
+          <h5 class="fw-bold">Digital Health Records</h5>
+          <p class="text-muted small">Secure and accessible medical history</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <div class="icon mb-3 text-primary fs-1">📩</div>
+          <h5 class="fw-bold">24/7 Support</h5>
+          <p class="text-muted small">Round-the-clock medical assistance</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <div class="icon mb-3 text-primary fs-1">📅</div>
+          <h5 class="fw-bold">Easy Booking</h5>
+          <p class="text-muted small">Simple appointment scheduling system</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Feature Cards Section End -->
+
+<!-- Services Grid Section Start -->
+<section class="services-grid py-5 bg-light">
+  <div class="container text-center">
+    <p class="btn btn-outline-primary mb-2">Our Services</p>
+    <h2 class="fw-bold mb-3">Comprehensive Healthcare Solutions</h2>
+    <p class="text-muted mb-5">Get instant access to our comprehensive healthcare services designed for your convenience</p>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="icon mb-3">🩺</div>
+            <h6 class="fw-bold">Find Doctor</h6>
+            <p class="text-muted small">Search and connect with certified doctors near you</p>
+            <ul class="text-start small text-success list-unstyled">
+              <li>✔ Verified Profiles</li>
+              <li>✔ Real Reviews</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Explore Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="icon mb-3">💊</div>
+            <h6 class="fw-bold">Online Pharmacy</h6>
+            <p class="text-muted small">Order medicines online with home delivery</p>
+            <ul class="text-start small text-success list-unstyled">
+              <li>✔ Same Day Delivery</li>
+              <li>✔ Genuine Medicines</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="icon mb-3">🏥</div>
+            <h6 class="fw-bold">Hospital Locator</h6>
+            <p class="text-muted small">Find nearby hospitals and check availability</p>
+            <ul class="text-start small text-success list-unstyled">
+              <li>✔ Real-time Beds</li>
+              <li>✔ GPS Nearby</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Find Hospitals</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="icon mb-3">🧪</div>
+            <h6 class="fw-bold">Lab Tests</h6>
+            <p class="text-muted small">Book lab tests and get reports online</p>
+            <ul class="text-start small text-success list-unstyled">
+              <li>✔ Home Collection</li>
+              <li>✔ Digital Reports</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Book Test</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="icon mb-3">📹</div>
+            <h6 class="fw-bold">Telemedicine</h6>
+            <p class="text-muted small">Consult doctors online via video call</p>
+            <ul class="text-start small text-success list-unstyled">
+              <li>✔ HD Video Calls</li>
+              <li>✔ Instant Consultation</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Start Consultation</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="icon mb-3 text-danger">🚨</div>
+            <h6 class="fw-bold">Emergency Care</h6>
+            <p class="text-muted small">24/7 emergency medical assistance</p>
+            <ul class="text-start small text-success list-unstyled">
+              <li>✔ Nearest Hospitals</li>
+              <li>✔ Ambulance</li>
+            </ul>
+            <a href="#" class="btn btn-danger btn-sm mt-2">Call Emergency</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="icon mb-3">🤖</div>
+            <h6 class="fw-bold">AI Health Assistant</h6>
+            <p class="text-muted small">Get instant health assistance from our AI</p>
+            <a href="#" class="btn btn-primary btn-sm mt-4">Chat Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="icon mb-3">📁</div>
+            <h6 class="fw-bold">Health Vault</h6>
+            <p class="text-muted small">Secure digital health record management</p>
+            <ul class="text-start small text-success list-unstyled">
+              <li>✔ Encrypted Storage</li>
+              <li>✔ Easy Sharing</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Access Vault</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Services Grid Section End -->
+</body>
+</html>
